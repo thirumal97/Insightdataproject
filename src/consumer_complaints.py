@@ -72,7 +72,7 @@ def capture_result(prod_dict):
         new_list.append([key[0],key[1],str(val[0]),str(val[1]),str(val[2])])
 
     #sort the p basing on the second values in the list i.e list[1] values
-    new_list.sort(key = lambda x:x[1])
+    #new_list.sort(key = lambda x:x[1])
 
     return new_list
 
