@@ -1,4 +1,5 @@
 import csv
+import sys
 from collections import Counter
 
 
@@ -85,8 +86,8 @@ def output_report(output, file_name):
 
 
 if __name__ == "__main__":
-    inp_file_name = 'samp.csv'
-    out_file_name='sampoutput1.csv'
+    inp_file_name = sys.argv[1]
+    out_file_name= sys.argv[2]
 
     prod_records = add_company(inp_file_name)
 
