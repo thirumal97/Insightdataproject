@@ -73,6 +73,7 @@ def capture_result(prod_dict):
 
     #sort the p basing on the second values in the list i.e list[1] values
     #new_list.sort(key = lambda x:x[1])
+        # This is not required here 
 
     return new_list
 
