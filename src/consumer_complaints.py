@@ -69,7 +69,7 @@ def capture_result(prod_dict):
 
     # appending all the values into a list p
     for key,val in new_dict.items():
-        new_list.append([key[0],int(key[1]),val[0],val[1],val[2]])
+        new_list.append([key[0],int(key[1]),str(val[0]),str(val[1]),str(val[2])])
 
     #sort the p basing on the second values in the list i.e list[1] values
     new_list.sort(key = lambda x:x[1])
