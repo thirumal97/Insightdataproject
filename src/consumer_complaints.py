@@ -93,6 +93,6 @@ if __name__ == "__main__":
 
     r = capture_result(prod_records)
     output_report(r,out_file_name)
-    print(r)
+    
     
         
