@@ -53,18 +53,18 @@ def capture_result(prod_dict):
         com = Counter(prod_dict[key])
 
         # maximum complaints received for 'm' company 
-        m = max(com)
-        j = com[m]
+        max_comp = max(com)
+        max_comp_num= com[max_comp]
 
         # how many times the complaint registered for the product in a year
-        k = len(prod_dict[key])
+         total_complaints= len(prod_dict[key])
 
         # how many distinct companies got the complaint 
-        t = (len(set(prod_dict[key])))
+        distinct_compaines = (len(set(prod_dict[key])))
 
-        a = round(j/k*100)
+        high_percent_comp = round(max_comp_num/total_complaints*100)
         
-        new_dict[key]= [k,t,a]
+        new_dict[key]= [total_companies,distinct_companies,high_percent_comp]
        
 
     # appending all the values into a list p
