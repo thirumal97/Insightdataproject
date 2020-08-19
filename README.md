@@ -5,7 +5,8 @@ This repository contains [consumer complaints coding challenge](https://github.c
 In the src folder the consumer_complaints.py program reads the input file and gives the output file, The py script follows the steps below:
 1) Here we take a dictionary and dictionary keys as  [product and year] and dictionary values as [companies].
 2) We calculate the required fields like the number of companies that the complaint is registered for the product in the year 
-3) and number of complaints that 
+3) and number of companies that companies got registered against the complaint 
+4) calculating the nearest whole number percentage of the company who got high complaints to the total number of complaints.
 ## Instructions
 The 'run.sh' file in the home directory can be used for execution. Also, execution can be triggered by executing the following command in the terminal
 
