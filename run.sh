@@ -1,1 +1,1 @@
-python3.7 ./src/consumer_complaints.py ./input/complaints.csv ./output/report.csv
+pytho3.7 ./src/consumer_complaints.py ./input/complaints.csv ./output/report.csv
