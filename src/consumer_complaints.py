@@ -53,18 +53,18 @@ def capture_result(prod_dict):
         com = Counter(prod_dict[key])
 
         # maximum complaints received for 'm' company 
-        max_comp = max(com)
-        max_comp_num= com[max_comp]
+        m = max(com)
+        j = com[m]
 
         # how many times the complaint registered for the product in a year
-         total_complaints= len(prod_dict[key])
+        k = len(prod_dict[key])
 
         # how many distinct companies got the complaint 
-        distinct_compaines = (len(set(prod_dict[key])))
+        t = (len(set(prod_dict[key])))
 
-        high_percent_comp = round(max_comp_num/total_complaints*100)
+        a = round(j/k*100)
         
-        new_dict[key]= [total_companies,distinct_companies,high_percent_comp]
+        new_dict[key]= [k,t,a]
        
 
     # appending all the values into a list p
@@ -73,7 +73,7 @@ def capture_result(prod_dict):
 
     #sort the p basing on the second values in the list i.e list[1] values
     #new_list.sort(key = lambda x:x[1])
-        # This is not required here 
+        # This is not required here
 
     return new_list
 
