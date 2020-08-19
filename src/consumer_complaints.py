@@ -24,7 +24,7 @@ def add_company(file_name):
             product = row[1]
             product = product.lower()
             
-            year = row[0][-4:]
+            year = row[0][0:4]
             
             company = row[7]
             company = company.lower()
